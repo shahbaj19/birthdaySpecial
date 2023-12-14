@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+    
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  background: #b9f27b;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card {
+  background: #f5dddd;
+  border-radius: 4px;
+  height: 85vh;
+  width: 80vw;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+
+img.birthday {
+  max-height: 40vh;
+}
+
+.text {
+  padding: 1em;
+}
+
+.muted {
+  opacity: 0.8;
+}
+
+.space {
+  height: 100px;
+}
+  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+  <title>Happy Birthday 🍰</title>
+  
+</head>
+
+<body>
+  <div class="card">
+    <img src="./birthday.svg" alt="birthday" class="birthday">
+    <div class="text">
+      <h1 style="color: rgb(4, 4, 47);font-family: Arial, Helvetica, sans-serif;">🎂🎉🤩🎁<br><I> Happy Birthday Khusbu
+          ! </I></h1>
+      <p style="color: rgb(5, 9, 247);font-size: large;">ख़ुदा करे न ढले धूप तेरे चेहरे की
+
+        तमाम उम्र तिरी ज़िंदगी की शाम न हो,, <br>
+        ज़िंदगी भर ये आसमाँ तुझ को
+
+        किसी आफ़त में मुब्तला न करे..
+      </p>
+      <p class="muted">-By Swity </p>
+    </div>
+    <div class="space"></div>
+  </div>
+</body>
+
+</html>
